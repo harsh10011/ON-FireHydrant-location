@@ -14,8 +14,8 @@ app = Flask(__name__)
 
 # Making a database connection
 db_connection = sql.connect(host="localhost",
-  user="Divya",
-  password="Divya23@",
+  user="Harsh",
+  password="Harsh23@",
   database="ontario_firehydrants")
 
 db_cursor = db_connection.cursor()
@@ -63,7 +63,7 @@ def my_form_post():
     long = resp_json_payload['results'][0]['geometry']['location']['lng']
 
 
-    ##                                          DEFINING DISTANCE FUNCTION AND FETCHING NEAREST 5 FIRE HYDRANTS FUNCTION
+    ## DEFINING DISTANCE FUNCTION AND FETCHING NEAREST 5 FIRE HYDRANTS FUNCTION
 
     ## Haversine Distance can be defined as the angular distance between two locations on the Earth’s surface.
     ## Method to find distance between two coordinates
